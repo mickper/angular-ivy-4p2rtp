@@ -1,0 +1,11 @@
+<p>Bonjour {{ name | uppercase }}</p>
+<p>Bonjour {{ toUppercase(name) }}</p>
+<p>{{ name | direBonjour: 'Bien le bonjour':'...' }}</p>
+
+<input type="text" [(ngModel)]="name" />
+
+<hr />
+
+<!-- <p>Fibonnacci de {{ counter }} = {{ fibonnacci(counter) }}</p> -->
+<p>Fibonnacci de {{ counter }} = {{ counter | fibonnacci }}</p>
+<input type="number" [(ngModel)]="counter" />
